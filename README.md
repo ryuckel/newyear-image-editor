@@ -17,32 +17,37 @@ Web上で画像が編集できるサービスを作りました。
 - 背景のマスク機能
 - フィルタ機能(モノクロ、セピアなど)
 
+# 仕様技術
+## 言語
+- HTML/CSS/JavaScript
+
+## フレームワーク
+- Vue.js 2.5.10
+
+## 主要ライブラリ
+- Buefy(UIコンポーネント)
+　URL:https://buefy.org/
+- tui-image-editor(画像編集機能)
+　URL:https://ui.toast.com/tui-image-editor/
+
+
 # 環境構築
 ## Project setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 開発環境の起動
 ```
 yarn run serve
 ```
 
-### Compiles and minifies for production
+### 本番環境のセットアップ
 ```
 yarn run build
 ```
 
-### Run your tests
+### テスト実行
 ```
 yarn run test
 ```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# image-editor-for-new-years-card

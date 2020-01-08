@@ -39,13 +39,6 @@ var theme = {
   "downloadButton.fontFamily": "NotoSans, sans-serif",
   "downloadButton.fontSize": "12px",
 
-  // main icons
-  // "menu.normalIcon.path": "../dist/svg/icon-b.svg",
-  // "menu.normalIcon.name": "icon-b",
-  // "menu.activeIcon.path": "../dist/svg/icon-a.svg",
-  // "menu.activeIcon.name": "icon-a",
-  // "menu.iconSize.width": "24px",
-  // "menu.iconSize.height": "24px",
   // メインアイコン
   "menu.normalIcon.path": icon_d,
   "menu.activeIcon.path": icon_b,
@@ -54,28 +47,10 @@ var theme = {
   // サブメニューアイコン
   "submenu.normalIcon.path": icon_d,
   "submenu.activeIcon.path": icon_c,
-  // "menu.normalIcon.path":
-  //   "../../node_modules/tui-image-editor/dist/svg/icon-b.svg",
-  // "menu.normalIcon.name": "icon-b",
-  // "menu.activeIcon.path":
-  //   "../../node_modules/tui-image-editor/dist/svg/icon-a.svg",
-  // "menu.activeIcon.name": "icon-a",
-  // "menu.iconSize.width": "24px",
-  // "menu.iconSize.height": "24px",
 
   // submenu primary color
   "submenu.backgroundColor": "#ffffff",
   "submenu.partition.color": "#858585",
-
-  // submenu icons
-  // "submenu.normalIcon.path":
-  //   "../../node_modules/tui-image-editor/dist/svg/icon-a.svg",
-  // "submenu.normalIcon.name": "icon-a",
-  // "submenu.activeIcon.path":
-  //   "../../node_modules/tui-image-editor/dist/svg/icon-c.svg",
-  // "submenu.activeIcon.name": "icon-c",
-  // "submenu.iconSize.width": "24px",
-  // "submenu.iconSize.height": "24px",
 
   // submenu labels
   "submenu.normalLabel.color": "#858585",

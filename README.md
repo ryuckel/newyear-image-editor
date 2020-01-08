@@ -30,6 +30,9 @@ Web上で画像が編集できるサービスを作りました。
 - tui-image-editor(画像編集機能)
 　URL:https://ui.toast.com/tui-image-editor/
 
+## インフラ(AWS)
+- EC2
+- Route53
 
 # 環境構築
 ## Project setup

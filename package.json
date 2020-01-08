@@ -9,6 +9,7 @@
 		"postInstall": "npm install --no-save --no-optional fabric@^1.6.7"
 	},
 	"dependencies": {
+		"@toast-ui/vue-image-editor": "^1.0.2",
 		"buefy": "^0.8.0",
 		"core-js": "^3.4.4",
 		"tui-image-editor": "^3.7.2",

@@ -14,7 +14,7 @@ export default {
   name: "Hello",
   methods: {
     pjtStart() {
-      alert("start!");
+      this.$emit("click");
     }
   }
 };

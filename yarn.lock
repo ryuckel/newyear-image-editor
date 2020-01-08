@@ -773,6 +773,13 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
+"@toast-ui/vue-image-editor@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@toast-ui/vue-image-editor/-/vue-image-editor-1.0.2.tgz#658e5fc8d43d3caaabc2ebd8f3a543d2bea29ebd"
+  integrity sha512-si0ZA26Y1zgDS4lFzKTTGFV5huUSIhFzp5QKQizJLoS1vuTOcwOK0jEwA4NiJ++yeGvtRQSgCWDb6kMJiHDYuw==
+  dependencies:
+    tui-image-editor "~3.3.0"
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -7448,6 +7455,15 @@ tui-image-editor@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/tui-image-editor/-/tui-image-editor-3.7.2.tgz#17f321fcf49fbe4ed4d202645a017f91a380e29f"
   integrity sha512-LdIycLHnzWah0lZOPX7mmxFyPNzdJlnLurI18gNAXQaS+2NMf8vx4ax3FKduWIASoWtfbT6CnS/0He/yhU1pGA==
+  dependencies:
+    core-js "2.4.1"
+    tui-code-snippet "^1.5.0"
+    tui-color-picker "^2.2.0"
+
+tui-image-editor@~3.3.0:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/tui-image-editor/-/tui-image-editor-3.3.1.tgz#c907cf57ab56ec6ec8a39960b237767cc34159c1"
+  integrity sha512-hcFuC2O70Ez3QDsfbg+EjlOlZl0EXyjlExl6pX6lcSLTyVNvGGhki/XRbAwcxpPeUJNj87I8nqk5zngqAxaJUA==
   dependencies:
     core-js "2.4.1"
     tui-code-snippet "^1.5.0"

@@ -5,6 +5,7 @@
 Web上で画像が編集できるサービスを作りました。
 
 ## URL
+https://rpg-image-editor.firebaseapp.com/
 
 # 機能一覧
 ## 画像編集
@@ -17,22 +18,17 @@ Web上で画像が編集できるサービスを作りました。
 - 背景のマスク機能
 - フィルタ機能(モノクロ、セピアなど)
 
-# 仕様技術
-## 言語
+# 使用技術
+## 言語、フレームワーク
 - HTML/CSS/JavaScript
-
-## フレームワーク
 - Vue.js 2.5.10
 
-## 主要ライブラリ
+## 主要ライブラリなど
 - Buefy(UIコンポーネント)
 　URL:https://buefy.org/
 - tui-image-editor(画像編集機能)
 　URL:https://ui.toast.com/tui-image-editor/
-
-## インフラ(AWS)
-- EC2
-- Route53
+- Firebase Hosting
 
 # 環境構築
 ## Project setup

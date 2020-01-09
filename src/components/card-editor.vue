@@ -1,15 +1,18 @@
 <template>
-  <tui-image-editor ref="tuiImageEditor" :include-ui="useDefaultUI" :options="options"></tui-image-editor>
+  <div>
+    <!-- <button @click="save">編集した画像を保存</button> -->
+    <tui-image-editor @save="save" ref="tuiEditor" :include-ui="useDefaultUI" :options="options" />
+  </div>
 </template>
 <script>
 import "../../node_modules/tui-color-picker/dist/tui-color-picker.css";
 import "../../node_modules/tui-image-editor/dist/tui-image-editor.css";
 import { ImageEditor } from "@toast-ui/vue-image-editor";
-import "../../node_modules/tui-image-editor";
 import icon_a from "../../node_modules/tui-image-editor/dist/svg/icon-a.svg";
 import icon_b from "../../node_modules/tui-image-editor/dist/svg/icon-b.svg";
 import icon_c from "../../node_modules/tui-image-editor/dist/svg/icon-c.svg";
 import icon_d from "../../node_modules/tui-image-editor/dist/svg/icon-d.svg";
+import "file-saver";
 
 var theme = {
   //common (fixed)
@@ -92,7 +95,6 @@ export default {
         cssMaxWidth: 700,
         cssMaxHeight: 500,
         includeUI: {
-          // menu: ["shape", "filter"],
           initMenu: "filter",
           uiSize: {
             width: "100%",
@@ -103,6 +105,14 @@ export default {
         }
       }
     };
+  },
+  methods: {
+    save() {
+      // const image = this.$refs.tuiEditor.invoke("toDataURL");
+      const image = this.$refs.tuiEditor.editorInstance.toDataURL();
+      event.preventDefault();
+      alert(image);
+    }
   }
 };
 </script>

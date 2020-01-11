@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <button @click="save">編集した画像を保存</button> -->
-    <tui-image-editor @save="save" ref="tuiEditor" :include-ui="useDefaultUI" :options="options" />
+    <tui-image-editor ref="tuiEditor" :include-ui="useDefaultUI" :options="options" />
   </div>
 </template>
 <script>
@@ -13,6 +13,75 @@ import icon_b from "../../node_modules/tui-image-editor/dist/svg/icon-b.svg";
 import icon_c from "../../node_modules/tui-image-editor/dist/svg/icon-c.svg";
 import icon_d from "../../node_modules/tui-image-editor/dist/svg/icon-d.svg";
 import "file-saver";
+
+const locale_ja = {
+  Load: "ファイル選択",
+  Download: "ダウンロード",
+  Apply: "適用",
+  Arrow: "矢印",
+  "Arrow-2": "矢印2",
+  "Arrow-3": "矢印3",
+  // Blend
+  Blur: "ぼかし",
+  Bold: "太字",
+  Brightness: "明るさ",
+  Bubble: "吹き出し",
+  Cancel: "キャンセル",
+  Center: "中央寄せ",
+  Circle: "円",
+  // Color
+  "Color Filter": "色抜き",
+  Crop: "切り取り",
+  Custom: "カスタム",
+  "Custom icon": "カスタムアイコン",
+  Distance: "長さ",
+  Draw: "描画",
+  Emboss: "エンボス加工",
+  // Fill
+  Filter: "フィルタ",
+  Flip: "反転",
+  "Flip X": "横反転",
+  "Flip Y": "縦反転",
+  Free: "フリーハンド",
+  Grayscale: "白黒",
+  Heart: "ハート",
+  Icon: "アイコン",
+  Invert: "ネガポジ",
+  Italic: "斜体",
+  Left: "左寄せ",
+  // Load
+  // Load Mask Image
+  Location: "場所",
+  // Mask
+  // Multiply
+  Noise: "ノイズ",
+  Pixelate: "モザイク",
+  Polygon: "六角形",
+  Range: "幅",
+  Rectangle: "四角形",
+  // Redo
+  "Remove White": "白抜き",
+  Reset: "リセット",
+  Right: "右寄せ",
+  Rotate: "回転",
+  Sepia: "セピア",
+  Sepia2: "セピア2",
+  // Shape
+  Sharpen: "シャープ",
+  Square: "スクエア",
+  "Star-1": "星",
+  "Star-2": "星2",
+  Straight: "直線",
+  Stroke: "線の幅",
+  Text: "テキスト",
+  "Text size": "文字の大きさ",
+  Threshold: "値",
+  // Tint
+  Triangle: "三角形",
+  Underline: "下線",
+  Undo: "元に戻す",
+  Value: "影の濃さ"
+};
 
 var theme = {
   //common (fixed)
@@ -101,18 +170,11 @@ export default {
             height: "600px"
           },
           theme: theme,
+          locale: locale_ja,
           menuBarPosition: "left"
         }
       }
     };
-  },
-  methods: {
-    save() {
-      // const image = this.$refs.tuiEditor.invoke("toDataURL");
-      const image = this.$refs.tuiEditor.editorInstance.toDataURL();
-      event.preventDefault();
-      alert(image);
-    }
   }
 };
 </script>

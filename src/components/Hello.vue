@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 style="margin:20px;">テンプレートはイヤだけど簡単に年賀状のイラストを作りたい人のためのサービスです</h1>
+    <h1 style="margin:20px;">テンプレート通りはイヤだけど簡単に年賀状イラストを作りたい人のためのサービスです</h1>
     <p>
       <a>
         <b-button type="is-info" @click="pjtStart">はじめる</b-button>

@@ -30,6 +30,10 @@ https://rpg-image-editor.firebaseapp.com/
 　URL:https://ui.toast.com/tui-image-editor/
 - Firebase Hosting
 
+## 既知の課題
+- レスポンシブ対応
+- デフォルト画像の用意
+
 # 環境構築
 ## Project setup
 ```
